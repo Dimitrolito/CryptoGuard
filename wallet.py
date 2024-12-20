@@ -33,7 +33,7 @@ class Wallet:
             'address': self.address
         }
         with open(self.wallet_file, 'w') as f:
-            json.dump(data, f)
+            json.dump(data, f)   #test
 
     def generate_address(self):
         public_key_bytes = self.public_key.to_string()
